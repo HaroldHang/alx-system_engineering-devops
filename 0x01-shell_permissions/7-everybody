@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod uao+x
+chmod uao+x hello
