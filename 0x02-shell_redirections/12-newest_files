@@ -1,0 +1,2 @@
+#!/bin/bash
+0;136;0cfind . -type f | sort -n | tail -10
