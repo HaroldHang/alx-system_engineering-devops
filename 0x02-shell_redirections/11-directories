@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -da | wc -l
+0;136;0cls -da | wc -l
