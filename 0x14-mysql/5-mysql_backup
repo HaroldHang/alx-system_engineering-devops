@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# Make a backup of the databases
 # Define variables
 DB_USER="root"
 #BACKUP_DIR="~/"
