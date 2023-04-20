@@ -2,17 +2,17 @@
 
 # Define variables
 DB_USER="root"
-BACKUP_DIR="~/"
+#BACKUP_DIR="~/"
 
 # Generate filename
 DATE=$(date +"%d-%m-%Y")
-FILENAME="${BACKUP_DIR}/all_databases_${DATE}.sql"
+FILENAME="all_databases_${DATE}.sql"
 
 # Generate MySQL dump
 mysqldump --user="${DB_USER}" --password="$1" --all-databases > "${FILENAME}"
 
 # Compress the dump
-tar -zcf "${BACKUP_DIR}/${DATE}.tar.gz" "${FILENAME}"
+tar -zcf "${DATE}.tar.gz" "${FILENAME}"
 
 # Delete the original dump
-rm "${FILENAME}"
+#rm "${FILENAME}"
