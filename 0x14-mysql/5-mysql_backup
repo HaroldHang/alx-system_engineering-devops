@@ -6,7 +6,7 @@ DB_USER="root"
 
 # Generate filename
 DATE=$(date +"%d-%m-%Y")
-FILENAME="all_databases_${DATE}.sql"
+FILENAME="backup.sql"
 
 # Generate MySQL dump
 mysqldump --user="${DB_USER}" --password="$1" --all-databases > "${FILENAME}"
